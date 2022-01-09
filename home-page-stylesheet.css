@@ -30,4 +30,17 @@ div.top {
 .time {
     border: none;
     text-align: center;
+    font-size: 3.7em;
+    font-weight: lighter;
+}
+
+.crypto-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.crypto-icon {
+    margin-right: 7px;
 }
