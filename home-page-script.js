@@ -26,4 +26,24 @@ function renderTime() {
 
 setInterval(renderTime, 1000);
 
+//rendering the current location weather to the page using the OpenWeather API
+navigator.geolocation.getCurrentPosition(position => {
+    fetch(`https://apis.scrimba.com/openweathermap/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&units=metric`)
+        .then(res => {
+            if (!res.ok) {
+                throw Error("Weather data not available")
+            }
+            return res.json()
+        })
+        .then(data => {
+            console.log(data)
+            const iconUrl = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+            document.querySelector('.weather').innerHTML = `
+            <img src=${iconUrl} />
+            <p class="temperature">${data.main.temp}°C</p>
+            <p class="city">${data.name}</p>`;
+        })
+        .catch(err => console.error(err));
+});
+
 

@@ -22,7 +22,7 @@ main {
     justify-content: space-between;
 }
 
-div.top {
+.top {
     display: flex;
     justify-content: space-between;
 }
@@ -43,4 +43,29 @@ div.top {
 
 .crypto-icon {
     margin-right: 7px;
+}
+
+.weather {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-self: flex-start;
+}
+
+.weather > img {
+    width: 80px;
+}
+
+.city {
+    width: 100%;
+    text-align: right;
+    margin: 0;
+    font-size: 1.3rem;
+    margin-top: -15px;
+}
+
+.temperature {
+    margin: 0;
+    font-size: 1.6rem;
 }
