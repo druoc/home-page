@@ -13,6 +13,7 @@
     }
 }
 
+
 body {
     margin: 0;
     box-sizing: border-box;
@@ -29,7 +30,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    animation: fadeIn ease 4s;
+    
 }
 
 .top {
@@ -42,6 +43,7 @@ main {
     text-align: center;
     font-size: 3.7em;
     font-weight: lighter;
+    animation: fadeIn ease 1s;
 }
 
 .crypto-container {
@@ -49,6 +51,7 @@ main {
     flex-direction: row;
     align-items: center;
     font-size: 1.2em;
+    animation: fadeIn ease 3s;
 }
 
 .crypto-icon {
@@ -61,6 +64,7 @@ main {
     flex-wrap: wrap;
     justify-content: flex-end;
     align-self: flex-start;
+    animation: fadeIn ease 5s;
 }
 
 .weather > img {
@@ -84,12 +88,14 @@ main {
     display: flex;
     justify-content: flex-end;
     border-radius: 30px;
+    animation: fadeIn ease 6s;
 }
 
 .author {
     display: flex;
     flex-direction: row;
     margin-bottom: -350px;
+    animation: fadeIn ease 4s;
 }
 
 
