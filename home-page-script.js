@@ -1,9 +1,6 @@
-//using the Fetch api to return a random picture from the Unplash api according to the drop down selector
-//which we then render on each selection as a background image, and author of the picture to the 'author' p-tag.
-
 const theme = document.querySelector('#theme-select'); //setting the drop down menu as a variable
 
-//formats our returned Bitcoin cost into GBP, when we pass the value into it as a parameter in the fetch request further down
+//formats our returned Bitcoin cost into GBP
 const currencyFormatter = new Intl.NumberFormat('en-GB', {
     style: "currency",
     currency: "GBP",
